@@ -7,7 +7,7 @@
 										 ---HEADER---
 */
 
-$header-top-height: 100px; 
+$header-top-height: 120px; 
 $header-middle-height: 145px; 
 $header-bottom-height: 85px;
 $header-min-menu: 70px;
@@ -62,10 +62,9 @@ $header-min-menu: 70px;
 
 .header-hidden{
 	//position: relative;
-	height: $header-top-height;
+	height: $header-top-height+$header-bottom-height;
 	background-color: transparent;
 	transition: height 0.3s ease-in-out 0.4s;
-	display: none;
 	@media ( max-width: 991px ){
 		height: 70px;
 		display: block;
@@ -96,9 +95,10 @@ $header-min-menu: 70px;
 }
 .header-bottom{
 	position: relative;
-		background-image: url('../img/bg/bg-body.jpg');
-	background-repeat: repeat-y;
-	top: 0;
+	background-color: white;
+	.align-i-center{
+		height: $header-bottom-height;
+	}
 }
 
 
@@ -106,9 +106,22 @@ $header-min-menu: 70px;
 	padding-top: 5px;
   padding-bottom: 5px;	
 	img{
-		width: 100px;
+		display: inline-block;
+		width: 85px;
+		vertical-align: middle;
+	}
+	.slogan{
+		display: inline-block;
+		color: $color-1;
+		font-weight: 700;
+		text-transform: uppercase;
+		vertical-align: middle;
+    //width: 220px;
+    text-align: left;
+    margin-top: 10px;
 	}
 }
+
 .header-scroll{
 
 	.header-top{
@@ -122,15 +135,10 @@ $header-min-menu: 70px;
 			box-shadow: 0px 5px 20px -10px black;
 		}
 		.header-top-content{
-			height: 80px;
-		}
-		.header-logo{
-			img{
-				width: 60%;
-			}
+			height: 0;
 		}
 		.header-bottom{
-			top: -60px;
+			top: 0;
 			box-shadow: 0px 5px 20px -10px black;
 			.header-bottom-content{
 				height: 60px;
@@ -138,9 +146,9 @@ $header-min-menu: 70px;
 		}
 	}
 }
-
-
 .header-lang{
+	font-weight: 600;
+	text-transform: uppercase;
 	.active{
 		color: $color-1;
 	}
@@ -157,20 +165,38 @@ $header-min-menu: 70px;
 .menu{
 	font-weight: 500;
 	position: relative;
-
+	border-top: 1px solid rgba($color-gray-1, 0.5);
+	border-bottom: 1px solid rgba($color-gray-1, 0.5);
+	color: black;
+	font-weight: 600;
+	margin-top: 30xp;
+	margin-bottom: 30xp;
+	nav{
+		white-space: nowrap;
+	}
 	ul:not([class*="sub-menu"]){
+	  display: flex;
+	  justify-items: center;
 		@extend .letter-none;
 		& > li{
 			display: inline-block;
 			position: relative;
+			width: 100%;
 			letter-spacing: 0;
 			font-size: 0.9em;
+			&:not(:last-child){
+				border-right: 1px solid $color-gray-1;
+			}
 			& > a{
 				display: block;
 				padding: 15px 10px;
 				position: relative;
 			}
 			&:hover{
+				background-color: $color-1;
+				a{
+					color: white;
+				}
 				.sub-menu-1,{
 					transform: none;transform: unset;
 					opacity: 1;
@@ -200,25 +226,6 @@ $header-min-menu: 70px;
 			transition: all 0.3s ease;
 			position: relative;
 			z-index: 2;
-			&:before, &:after{
-				@extend .claf;
-				z-index: -1;
-				height: 1px;
-				transform: scaleX(0);
-				transition: all 0.3s ease;
-				background-color: $color-2;
-				bottom: 0;
-				top: inherit;
-			}
-			&:after{
-				background-color: $color-1;
-				transition: all 0.6s ease 0.1s;
-			}
-		}
-		a:hover{
-			&:before, &:after{
-				transform: scaleX(0.5);
-			}
 		}
 
 	}
