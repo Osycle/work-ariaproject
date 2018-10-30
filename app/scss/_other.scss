@@ -158,10 +158,10 @@
 			transform: scale(0.45);
 		}
 		&.previous{
-			left: 0;
+			left: 15px;
 		}
 		&.next{
-			right: 0;
+			right: 15px;
 		}
 		@media ( min-width: 992px ){
 			&.previous{

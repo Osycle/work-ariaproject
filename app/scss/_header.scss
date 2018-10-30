@@ -12,33 +12,6 @@ $header-middle-height: 145px;
 $header-bottom-height: 85px;
 $header-min-menu: 70px;
 
-.drop-sub{
-	position: relative;
-	.drop-sub-box{
-		opacity: 0;
-		visibility: hidden;
-		transform: translateY(12px);
-		transition: 
-							transform 0.3s ease-in-out,
-							visibility 0.3s ease-in-out,
-							opacity 0.3s ease-in-out
-							;
-		position: absolute;
-		z-index: 1;
-	}
-	&:hover{
-		.drop-sub-box{
-			opacity: 1;
-			transform: inherit;
-			visibility: visible;
-			transition: 
-				transform 0.3s ease-in-out,
-				visibility 0.3s ease-in-out,
-				opacity 0.3s ease-in-out
-		}
-	}
-}
-
 #header{
 	top: 0;
 	z-index: 110;
@@ -147,7 +120,7 @@ $header-min-menu: 70px;
 	}
 }
 .header-lang{
-	font-weight: 600;
+	font-weight: 700;
 	text-transform: uppercase;
 	.active{
 		color: $color-1;
@@ -155,7 +128,28 @@ $header-min-menu: 70px;
 	a{
 		transition: all 0.3s ease;
 		&:hover{
-			color: rgba($color-1, 0.5);
+			color: rgba(white, 0.7);
+		}
+	}
+	.lang-current{
+		min-width: 50px;
+		position: relative;
+	}
+	.drop-sub-box{
+		background-color: $color-1;
+		color: white;
+		text-align: center;
+	}
+	ul{
+		li{
+			width: 100%;
+			&:hover{
+				color: white;
+			}
+			a{
+				display: inline-block;
+				padding: 5px 15px;
+			}
 		}
 	}
 }
@@ -165,12 +159,10 @@ $header-min-menu: 70px;
 .menu{
 	font-weight: 500;
 	position: relative;
-	border-top: 1px solid rgba($color-gray-1, 0.5);
-	border-bottom: 1px solid rgba($color-gray-1, 0.5);
+	border-top: 1px solid rgba($color-gray-1, 0.4);
+	border-bottom: 1px solid rgba($color-gray-1, 0.4);
 	color: black;
 	font-weight: 600;
-	margin-top: 30xp;
-	margin-bottom: 30xp;
 	nav{
 		white-space: nowrap;
 	}

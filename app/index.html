@@ -38,7 +38,7 @@
 								<div class="header-phone col-md-6 color-1">
 									<p><b>+998 91 419 66 48</b></p>
 								</div>
-								<div class="header-email col-md-6 color-gray-2 font-w-5 text-uppercase">
+								<div class="header-email col-md-6 color-gray-2 font-w-6 text-uppercase">
 									<p>aria-gorup@gmail.com</p>
 								</div>
 							</div>
@@ -48,8 +48,18 @@
 									<span class="slogan p-l-15">Залог надежного <br>будущего!</span>
 								</a>
 							</div>
-							<div class="header-lang col-md-4 p-h-15 text-right-md">
-								<span class="va-middle">Выберите город:</span>
+							<div class="header-lang col-md-4 p-h-15 text-right-md drop-sub">
+								<span class="va-middle inline-block">Выберите город:</span>
+								<span class="va-middle inline-block p-l-10 lang-current">
+									<span class="color-1" role="button"><b>Ташкент</b> <i class="fa fa-caret-down p-l-5"></i> </span>
+									<div class="drop-sub-box">
+										<ul class="list-inline">
+											<li><a href="" title="">Ru</a></li>
+											<li><a href="" title="">Uz</a></li>
+										</ul>
+									</div>
+									
+								</span>
 							</div>
 						</div>
 					</div>
@@ -84,24 +94,21 @@
 		<!-- MIN MENU -->
 		<div id="min-menu" data-aos="fade">
 			<ul>
-				<li><a href="index.html">Главная</a></li>
-				<li><a href="about.html">О компании</a></li>                
-				<li><a href="certifications.html">Сертификаты</a></li>
-				<li><a href="showrooms.html">Шоу-румы</a></li>
-				<li><a href="services.html">Услуги</a></li>
-				<li><a href="news.html">Акции и новости</a></li>
-				<li><a href="vacancies.html">Вакансии</a></li>
-				<li><a href="partners.html">Партнерам</a></li>
-				<li><a href="reviews.html">Отзывы</a></li>
-				<li><a href="contacts.html">Контакты</a></li>
+				<li><a href="index.html" title=>Главная</a></li>
+				<li><a href="services.html" title=>Услуги</a></li>                
+				<li><a href="projects.html" title=>Проекты</a></li>
+				<li><a href="vacancies.html" title=>Вакансии</a></li>
+				<li><a href="docs.html" title=>Документы</a></li>
+				<li><a href="partners.html" title=>Партнеры</a></li>
+				<li><a href="about.html" title=>О нас</a></li>
+				<li><a href="contacts.html" title=>Контакты</a></li>
 				<div class="text-center m-t-30">
 					<p><big><b>+998 90 123 45 67</b></big></p>
 				</div>
-				<div class="socicons flexbasis-md-2 flexbasis-xs-12 p-h-15 text-center m-t-15 hover-color-1">
+				<div class="min-menu-lang text-center m-t-15">
 					<ul class="list-inline">
-						<li><a href=""><i class="fa-paper-plane fa"></i></a></li>
-						<li><a href=""><i class="fa-instagram fa"></i></a></li>
-						<li><a href=""><i class="fa-facebook fa"></i></a></li>
+						<li class="active"><a href="" title="">Ru</a></li>
+						<li class="active"><a href="" title="">Uz</a></li>
 					</ul>
 				</div>
 			</ul>
@@ -143,8 +150,8 @@
 							<div class="carousel-content z-index-1 relative">
 								<div class="container">
 									<div class="align-i-center relative p-h-15">
-										<div class="box-xs-10">
-											<div class="box-md-9 m-auto wrapper">
+										<div class="col-md-offset-1">
+											<div class="m-auto wrapper">
 												<h1>Многоэтажные жилые дома</h1>
 												<p>Маленький лорем ипсум</p>
 											</div>
@@ -189,10 +196,6 @@
 				</div>
 			</div><!-- ./bnr-slider -->
 
-			<!-- MAIN-CONTENT -->
-			<div class="main-content">
-
-
 				<!-- short-partners -->
 				<div class="short-partners m-v-30">
 					<div class="container">
@@ -200,7 +203,7 @@
 							<div class="entry-header text-center">
 								<h2>Наши <span class="color-1">клиенты</span></h2>
 							</div>
-							<div class="short-partners-carousel flickity-btn-1 m-v-30">
+							<div class="short-partners-carousel flickity-btn-1 flickity-btn-hidden m-v-30">
 								<div class="short-partners-items boxes text-center carousel-items p-b-15">
 									<figure>
 										<div class="img-content">
@@ -308,6 +311,7 @@
 					</div>
 				</div><!-- ./short-about -->
 
+				<!-- short-projects -->
 				<div class="short-projects">
 					<div class="container color-white p-v-35">
 						<div class="entry-header">
@@ -317,151 +321,246 @@
 								<a href="projects.html" title="">Все проекты</a>
 							</span>
 						</div>
-						<div class="short-projects-items boxes-4 figure-m-v-15">
-							<figure>
-								<div class="wrapper">
-									<a href="" title="">
-										<div class="img-content">
-											<div class="img" style="background-image: radial-gradient(rgba(255, 255, 255, 0), rgb(1, 11, 28)), url(../img/other/short-projects-1.jpg);"></div>
-										</div>	
-										<div class="cap-content">
-											<h4>Промышленные объекты</h4>
-										</div>
-										<div class="desc-content">
-											<p>2-ух уровневые Аппартаменты 160 м2</p>
-											<div class="price-content">
-												<span class="color-2">Lorem ipsum</span>
-												<span class="price">Rio 40$</span>
+						<div class="short-projects-carousel flickity-btn-1">
+							<div class="short-projects-items carousel-items boxes-4 figure-m-v-15">
+								<figure>
+									<div class="wrapper">
+										<a href="" title="">
+											<div class="img-content">
+												<div class="img" style="background-image: radial-gradient(rgba(255, 255, 255, 0), rgb(1, 11, 28)), url(../img/other/short-projects-1.jpg);"></div>
+											</div>	
+											<div class="cap-content">
+												<h4>Промышленные объекты</h4>
 											</div>
-											<div class="btn-content">
-												<span class="btn-opacity"><span class="btn-this">Подробнее</span></span>
+											<div class="desc-content">
+												<p>2-ух уровневые Аппартаменты 160 м2</p>
+												<div class="price-content">
+													<span class="color-2">Lorem ipsum</span>
+													<span class="price">Rio 40$</span>
+												</div>
+												<div class="btn-content">
+													<span class="btn-opacity"><span class="btn-this">Подробнее</span></span>
+												</div>
 											</div>
-										</div>
-									</a>
-								</div>
-							</figure>
-							<figure>
-								<div class="wrapper">
-									<a href="" title="">
-										<div class="img-content">
-											<div class="img" style="background-image: radial-gradient(rgba(255, 255, 255, 0), rgb(1, 11, 28)), url(../img/other/short-projects-1.jpg);"></div>
-										</div>	
-										<div class="cap-content">
-											<h4>Промышленные объекты</h4>
-										</div>
-										<div class="desc-content">
-											<p>2-ух уровневые Аппартаменты 160 м2</p>
-											<div class="price-content">
-												<span class="color-2">Lorem ipsum</span>
-												<span class="price">Rio 40$</span>
+										</a>
+									</div>
+								</figure>
+								<figure>
+									<div class="wrapper">
+										<a href="" title="">
+											<div class="img-content">
+												<div class="img" style="background-image: radial-gradient(rgba(255, 255, 255, 0), rgb(1, 11, 28)), url(../img/other/short-projects-2.jpg);"></div>
+											</div>	
+											<div class="cap-content">
+												<h4>Промышленные объекты</h4>
 											</div>
-											<div class="btn-content">
-												<span class="btn-opacity"><span class="btn-this">Подробнее</span></span>
+											<div class="desc-content">
+												<p>2-ух уровневые Аппартаменты 160 м2</p>
+												<div class="price-content">
+													<span class="color-2">Lorem ipsum</span>
+													<span class="price">Rio 40$</span>
+												</div>
+												<div class="btn-content">
+													<span class="btn-opacity"><span class="btn-this">Подробнее</span></span>
+												</div>
 											</div>
-										</div>
-									</a>
-								</div>
-							</figure>
-							<figure>
-								<div class="wrapper">
-									<a href="" title="">
-										<div class="img-content">
-											<div class="img" style="background-image: radial-gradient(rgba(255, 255, 255, 0), rgb(1, 11, 28)), url(../img/other/short-projects-1.jpg);"></div>
-										</div>	
-										<div class="cap-content">
-											<h4>Промышленные объекты</h4>
-										</div>
-										<div class="desc-content">
-											<p>2-ух уровневые Аппартаменты 160 м2</p>
-											<div class="price-content">
-												<span class="color-2">Lorem ipsum</span>
-												<span class="price">Rio 40$</span>
+										</a>
+									</div>
+								</figure>
+								<figure>
+									<div class="wrapper">
+										<a href="" title="">
+											<div class="img-content">
+												<div class="img" style="background-image: radial-gradient(rgba(255, 255, 255, 0), rgb(1, 11, 28)), url(../img/other/short-projects-3.jpg);"></div>
+											</div>	
+											<div class="cap-content">
+												<h4>Промышленные объекты</h4>
 											</div>
-											<div class="btn-content">
-												<span class="btn-opacity"><span class="btn-this">Подробнее</span></span>
+											<div class="desc-content">
+												<p>2-ух уровневые Аппартаменты 160 м2</p>
+												<div class="price-content">
+													<span class="color-2">Lorem ipsum</span>
+													<span class="price">Rio 40$</span>
+												</div>
+												<div class="btn-content">
+													<span class="btn-opacity"><span class="btn-this">Подробнее</span></span>
+												</div>
 											</div>
-										</div>
-									</a>
-								</div>
-							</figure>
-							<figure>
-								<div class="wrapper">
-									<a href="" title="">
-										<div class="img-content">
-											<div class="img" style="background-image: radial-gradient(rgba(255, 255, 255, 0), rgb(1, 11, 28)), url(../img/other/short-projects-1.jpg);"></div>
-										</div>	
-										<div class="cap-content">
-											<h4>Промышленные объекты</h4>
-										</div>
-										<div class="desc-content">
-											<p>2-ух уровневые Аппартаменты 160 м2</p>
-											<div class="price-content">
-												<span class="color-2">Lorem ipsum</span>
-												<span class="price">Rio 40$</span>
+										</a>
+									</div>
+								</figure>
+								<figure>
+									<div class="wrapper">
+										<a href="" title="">
+											<div class="img-content">
+												<div class="img" style="background-image: radial-gradient(rgba(255, 255, 255, 0), rgb(1, 11, 28)), url(../img/other/short-projects-4.jpg);"></div>
+											</div>	
+											<div class="cap-content">
+												<h4>Промышленные объекты</h4>
 											</div>
-											<div class="btn-content">
-												<span class="btn-opacity"><span class="btn-this">Подробнее</span></span>
+											<div class="desc-content">
+												<p>2-ух уровневые Аппартаменты 160 м2</p>
+												<div class="price-content">
+													<span class="color-2">Lorem ipsum</span>
+													<span class="price">Rio 40$</span>
+												</div>
+												<div class="btn-content">
+													<span class="btn-opacity"><span class="btn-this">Подробнее</span></span>
+												</div>
 											</div>
-										</div>
-									</a>
-								</div>
-							</figure>
-							
+										</a>
+									</div>
+								</figure>
+								<figure>
+									<div class="wrapper">
+										<a href="" title="">
+											<div class="img-content">
+												<div class="img" style="background-image: radial-gradient(rgba(255, 255, 255, 0), rgb(1, 11, 28)), url(../img/other/short-projects-1.jpg);"></div>
+											</div>	
+											<div class="cap-content">
+												<h4>Промышленные объекты</h4>
+											</div>
+											<div class="desc-content">
+												<p>2-ух уровневые Аппартаменты 160 м2</p>
+												<div class="price-content">
+													<span class="color-2">Lorem ipsum</span>
+													<span class="price">Rio 40$</span>
+												</div>
+												<div class="btn-content">
+													<span class="btn-opacity"><span class="btn-this">Подробнее</span></span>
+												</div>
+											</div>
+										</a>
+									</div>
+								</figure>
+								<figure>
+									<div class="wrapper">
+										<a href="" title="">
+											<div class="img-content">
+												<div class="img" style="background-image: radial-gradient(rgba(255, 255, 255, 0), rgb(1, 11, 28)), url(../img/other/short-projects-2.jpg);"></div>
+											</div>	
+											<div class="cap-content">
+												<h4>Промышленные объекты</h4>
+											</div>
+											<div class="desc-content">
+												<p>2-ух уровневые Аппартаменты 160 м2</p>
+												<div class="price-content">
+													<span class="color-2">Lorem ipsum</span>
+													<span class="price">Rio 40$</span>
+												</div>
+												<div class="btn-content">
+													<span class="btn-opacity"><span class="btn-this">Подробнее</span></span>
+												</div>
+											</div>
+										</a>
+									</div>
+								</figure>
+								<figure>
+									<div class="wrapper">
+										<a href="" title="">
+											<div class="img-content">
+												<div class="img" style="background-image: radial-gradient(rgba(255, 255, 255, 0), rgb(1, 11, 28)), url(../img/other/short-projects-3.jpg);"></div>
+											</div>	
+											<div class="cap-content">
+												<h4>Промышленные объекты</h4>
+											</div>
+											<div class="desc-content">
+												<p>2-ух уровневые Аппартаменты 160 м2</p>
+												<div class="price-content">
+													<span class="color-2">Lorem ipsum</span>
+													<span class="price">Rio 40$</span>
+												</div>
+												<div class="btn-content">
+													<span class="btn-opacity"><span class="btn-this">Подробнее</span></span>
+												</div>
+											</div>
+										</a>
+									</div>
+								</figure>
+								<figure>
+									<div class="wrapper">
+										<a href="" title="">
+											<div class="img-content">
+												<div class="img" style="background-image: radial-gradient(rgba(255, 255, 255, 0), rgb(1, 11, 28)), url(../img/other/short-projects-4.jpg);"></div>
+											</div>	
+											<div class="cap-content">
+												<h4>Промышленные объекты</h4>
+											</div>
+											<div class="desc-content">
+												<p>2-ух уровневые Аппартаменты 160 м2</p>
+												<div class="price-content">
+													<span class="color-2">Lorem ipsum</span>
+													<span class="price">Rio 40$</span>
+												</div>
+												<div class="btn-content">
+													<span class="btn-opacity"><span class="btn-this">Подробнее</span></span>
+												</div>
+											</div>
+										</a>
+									</div>
+								</figure>
+
+							</div>
 						</div>
 					</div>
-				</div>
+				</div><!-- ./short-projects -->
 
-			</div><!-- ./MAIN-CONTENT -->
 
 		</main><!-- ./MAIN -->
 		<!-- FOOTER -->
 		<footer id="footer" class="text-center-sm">
 			<div class="container">
 				<div class="footer-content clearfix p-v-15 color-white row">
-					<div class="align-i-center">
-						<div class="footer-logo flexbasis-md-2 flexbasis-xs-12 m-v-15">
-							<div class="p-h-15">
-								<a href="index.html" title="">
-									<img src="img/footer-logo.png" alt="">
-								</a>
-							</div>
-						</div>
-						<div class="footer-menu flexbasis-md-8 flexbasis-xs-12 hidden-xs hidden-sm">
-							<ul class="list-inline m-v-30 p-h-15">
-								<li><a href="index.html" title=>Главная</a></li>
-								<li><a href="about.html" title=>О компании</a></li>                
-								<li><a href="certifications.html" title=>Сертификаты</a></li>
-								<li><a href="showrooms.html" title=>Шоу-румы</a></li>
-								<li><a href="services.html" title=>Услуги</a></li>
-								<li><a href="news.html" title=>Акции и новости</a></li>
-								<li><a href="vacancies.html" title=>Вакансии</a></li>
-								<li><a href="partners.html" title=>Партнерам</a></li>
-								<li><a href="reviews.html" title=>Отзывы</a></li>
-								<li><a href="contacts.html" title=>Контакты</a></li>
-							</ul>
-						</div>
-						<div class="socicons flexbasis-md-2 flexbasis-xs-12 text-right-md hover-color-1">
-							<ul class="list-inline p-h-15">
-								<li><a href="" title=""><i class="fa-paper-plane fa"></i></a></li>
-								<li><a href="" title=""><i class="fa-instagram fa"></i></a></li>
-								<li><a href="" title=""><i class="fa-facebook fa"></i></a></li>
-							</ul>
+					<div class="footer-menu hidden-xs hidden-sm">
+						<div class="menu text-center-md box-md-10 p-h-15 text-uppercase">
+							<nav class="box-md-8 m-auto">
+								<ul>
+									<li><a href="index.html" title=>Главная</a></li>
+									<li><a href="services.html" title=>Услуги</a></li>                
+									<li><a href="projects.html" title=>Проекты</a></li>
+									<li><a href="vacancies.html" title=>Вакансии</a></li>
+									<li><a href="docs.html" title=>Документы</a></li>
+									<li><a href="partners.html" title=>Партнеры</a></li>
+									<li><a href="about.html" title=>О нас</a></li>
+									<li><a href="contacts.html" title=>Контакты</a></li>
+								</ul>
+							</nav>
 						</div>
 					</div>
+					<div>
+					<div class="align-i-center justify-c-between header-top-content">
+						<div class="col-md-4 p-h-15">
+							<div class="header-phone col-md-6 color-white">
+								<p><b>+998 91 419 66 48</b></p>
+							</div>
+							<div class="header-email col-md-6 color-gray-2 color-1 font-w-6 text-uppercase">
+								<p>aria-gorup@gmail.com</p>
+							</div>
+						</div>
+						<div class="col-md-4 p-h-15 text-center">
+							<a href="index.html" title="">
+								<img src="img/footer-logo.png" alt="">
+							</a>
+						</div>
+						<div class="header-lang col-md-4 p-h-15 text-right-md">
+							<p>Узбекистан,<br> г .Ташкент Собир.Р офис 1313</p>
+						</div>
+					</div>
+				</div>
 					
 				</div>
 			</div>
-			<div class="copy-content">
+			<div class="copy-content color-white bg-color-3">
 				<div class="container clearfix">
 					<div class="copyright col-md-6 p-v-10">
-						<p>Copyright © <time id="copydate">2018</time>. <span><span class="color-4">RDF</span></span></p>
+						<p>Copyright © <time id="copydate">2018</time>. <span><span class="color-1">Ariaproject</span></span></p>
 						<script>copydate.innerText = new Date().getFullYear()</script>
 					</div>
 					<div class="dev col-md-6 hidden-xs hidden-sm text-right-md p-v-10">
 						<p>
 							<a href="https://lifestyle.uz/" class="link" title="Создание и продвижение сайтов">Создание сайтов
 								<em>
-									<span class="color-4">Life </span>
+									<span class="color-1">Life </span>
 								</em>Style</a>
 						</p>
 					</div>

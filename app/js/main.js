@@ -71,8 +71,8 @@
 		$("#min-menu").mmenu({
 			extensions: [
 				"wrapper-bg", // wrapper-bg black
-				"theme-dark",
-				//"theme-white",
+				//"theme-dark",
+				"theme-white",
 				//"fullscreen",
 				"listview-50",
 				"fx-panels-slide-up",
@@ -234,16 +234,46 @@
         freeScroll: false,
         pauseAutoPlayOnHover: true,
         arrowShape: arrowStyle,
-        initialIndex: 0,
-        prevNextButtons: checkSm(),
-        draggable: true,
+        initialIndex: Math.round($(".short-partners-carousel .carousel-items figure").length / 2),
+        prevNextButtons: true,
+        draggable: false,
         adaptiveHeight: true, 
         wrapAround: false,
         pageDots: false,
-        contain: true,
+        contain: false,
         percentPosition: true,
         cellAlign: 'center'
       });
+    //short-projects-carousel
+    if ( $(".short-projects-carousel .carousel-items figure").length > 1){
+	      var crs = $('.short-projects-carousel .carousel-items').flickity({
+	        imagesLoaded: true,
+	        autoPlay: false,
+	        freeScroll: false,
+	        pauseAutoPlayOnHover: true,
+	        arrowShape: arrowStyle,
+	        initialIndex: Math.round($(".short-projects-carousel .carousel-items figure").length / 2),
+	        prevNextButtons: true,
+	        draggable: false,
+	        adaptiveHeight: true, 
+	        wrapAround: false,
+	        pageDots: false,
+	        contain: true,
+	        percentPosition: true,
+	        cellAlign: 'center'
+	      });
+	      crs.data("flickity");
+/*
+	      crs.on( 'select.flickity', function( event, index ) {
+					var index = $(this).find("figure.is-selected").index();
+					if( ($(this).find("figure").length-4) == index )
+	      		$(".short-projects-items .next").hide();
+	      	else
+	      		$(".short-projects-items .next").show();
+					console.log(index);
+				});
+				*/
+    }
 
 
     	
