@@ -196,13 +196,11 @@
 		background: transparent;
 		width: 33px;
     height: 33px;
-    border-radius: 50%;
-    border: 3px solid $color-4;
     .arrow{
-    	fill: $color-4;
+    	fill: $color-gray-3;
     }
     svg{
-    	transform: scale(0.7);
+    	transform: scale(0.9);
     }
 
 	}
@@ -213,14 +211,14 @@
 	margin-bottom: 50px;
 	.dot{
 		transition: all 0.3s ease;
-		background-color: rgba($color-1, 0.4);
+		background-color: rgba(white, 0.4);
 		opacity: 1;
 		border-radius: 50%;
   	width: 11px;
   	height: 11px;
 		&.is-selected{
 			transform: scale(1.4);
-			background-color: $color-1;
+			background-color: white;
 		}
 	}
 }
