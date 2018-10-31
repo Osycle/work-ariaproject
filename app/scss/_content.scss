@@ -323,7 +323,7 @@
 		&:hover{
 			.img{
 				opacity: 0.6;
-				background-image: radial-gradient(rgba(255, 255, 255, 0), lighten($color-1, 40%), url(../img/other/short-projects-1.jpg) );
+				background-image: radial-gradient(rgba(255, 255, 255, 0), lighten($color-1, 40%), url(img/other/short-projects-1.jpg) );
 			}
 			.btn-content{
 				margin-bottom: 0 !important;
