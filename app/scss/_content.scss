@@ -453,6 +453,29 @@
 					opacity: 1;
 				}
 			}
+			@media (min-width: 991px) {
+				&:nth-child(5n){
+					width: 95%;
+					width: calc(100% - 30px);
+					.desc-content{
+						width: 100%;
+					}
+					.cap-content{
+						width: 100%;
+	    			text-align: center;
+					}
+					.img{
+						height: 230px;
+					}
+					&:hover{
+						.wrapper{
+							transform-origin: 50% 50%;
+							transform: scale(1) perspective(560px) rotateX(0deg);
+						}
+					}
+				}
+			}
+
 		}
 	}
 }

@@ -8289,9 +8289,9 @@ textarea.form-control {
     transition: all 0.3s ease; }
   .short-projects-items figure:hover .img {
     opacity: 0.6;
-    background-image: -webkit-radial-gradient(rgba(255, 255, 255, 0), #5a93ff, url(../img/other/short-projects-1.jpg));
-    background-image: -o-radial-gradient(rgba(255, 255, 255, 0), #5a93ff, url(../img/other/short-projects-1.jpg));
-    background-image: radial-gradient(rgba(255, 255, 255, 0), #5a93ff, url(../img/other/short-projects-1.jpg)); }
+    background-image: -webkit-radial-gradient(rgba(255, 255, 255, 0), #5a93ff, url(img/other/short-projects-1.jpg));
+    background-image: -o-radial-gradient(rgba(255, 255, 255, 0), #5a93ff, url(img/other/short-projects-1.jpg));
+    background-image: radial-gradient(rgba(255, 255, 255, 0), #5a93ff, url(img/other/short-projects-1.jpg)); }
   .short-projects-items figure:hover .btn-content {
     margin-bottom: 0 !important;
     -webkit-transform: scale(1);
@@ -8411,6 +8411,25 @@ textarea.form-control {
   -ms-transform: scale(1.1);
   transform: scale(1.1);
   opacity: 1; }
+
+@media (min-width: 991px) {
+  .projects .short-projects-items figure:nth-child(5n) {
+    width: 95%;
+    width: -webkit-calc(100% - 30px);
+    width: calc(100% - 30px); }
+    .projects .short-projects-items figure:nth-child(5n) .desc-content {
+      width: 100%; }
+    .projects .short-projects-items figure:nth-child(5n) .cap-content {
+      width: 100%;
+      text-align: center; }
+    .projects .short-projects-items figure:nth-child(5n) .img {
+      height: 230px; }
+    .projects .short-projects-items figure:nth-child(5n):hover .wrapper {
+      -webkit-transform-origin: 50% 50%;
+      -ms-transform-origin: 50% 50%;
+      transform-origin: 50% 50%;
+      -webkit-transform: scale(1) perspective(560px) rotateX(0deg);
+      transform: scale(1) perspective(560px) rotateX(0deg); } }
 
 .project-items .img {
   -webkit-background-size: cover;

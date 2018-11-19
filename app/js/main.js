@@ -240,7 +240,7 @@
         adaptiveHeight: true, 
         wrapAround: false,
         pageDots: false,
-        contain: false,
+        contain: true,
         percentPosition: true,
         cellAlign: 'center'
       });
