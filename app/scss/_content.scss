@@ -139,7 +139,13 @@
 			height: $slider-height;
 		}
 	}
-
+	.bg-shadow{
+		opacity: 0;
+		// background: linear-gradient(to bottom, 
+		// 	rgba(white, 0) 0%,
+		// /*rgba(41,137,216,0) 50%,*/
+		// 	rgba(black, 0.7) 100%) !important;
+	}
 	//Навигация
 	.flickity-page-dots{
 		margin-bottom: 70px;
@@ -509,12 +515,12 @@
 }
 .project-article-carousel{
 	figure{
-		height: 460px;
+		height: 521px;
 	}
 	.img{
 		background-size: cover;
 		background-position: center;
-		height: 460px;
+		height: 521px;
 	}
 	@media (max-width: 991px) {
 		figure, .img{
