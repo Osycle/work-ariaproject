@@ -324,6 +324,7 @@
 		.img{
 			height: 530px;
 			background-size: cover;
+			background-position: center;
 			transition: all 0.3s ease;
 		}
 		&:hover{
@@ -397,7 +398,7 @@
 	}
 	@media (min-width: 992px) {
 		.align-i-center{
-			height: 660px;
+			height: 550px;
 		}
 		.bg-shadow{
 			background-color: rgba(black, 0.5);
@@ -515,12 +516,12 @@
 }
 .project-article-carousel{
 	figure{
-		height: 521px;
+		height: 600px;
 	}
 	.img{
 		background-size: cover;
 		background-position: center;
-		height: 521px;
+		height: 600px;
 	}
 	@media (max-width: 991px) {
 		figure, .img{

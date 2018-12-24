@@ -8291,6 +8291,7 @@ textarea.form-control {
     height: 530px;
     -webkit-background-size: cover;
     background-size: cover;
+    background-position: center;
     -webkit-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease; }
@@ -8365,7 +8366,7 @@ textarea.form-control {
     padding-bottom: 15px; }
   @media (min-width: 992px) {
     .article-bnr .align-i-center {
-      height: 660px; }
+      height: 550px; }
     .article-bnr .bg-shadow {
       background-color: rgba(0, 0, 0, 0.5); }
     .article-bnr .bg-shadow-white {
@@ -8462,13 +8463,13 @@ p {
   width: 100%; }
 
 .project-article-carousel figure {
-  height: 521px; }
+  height: 600px; }
 
 .project-article-carousel .img {
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center;
-  height: 521px; }
+  height: 600px; }
 
 @media (max-width: 991px) {
   .project-article-carousel figure, .project-article-carousel .img {
