@@ -518,11 +518,20 @@
 	figure{
 		height: 600px;
 	}
+	.flickity-page-dots{
+		.dot{
+			background-color: rgba($color-1, 0.4);
+			&.is-selected{
+				background-color: rgba($color-1, 1);
+			}
+		}
+	}
 	.img{
-		background-size: cover;
+		background-size: contain;
 		background-position: center;
 		height: 600px;
 	}
+
 	@media (max-width: 991px) {
 		figure, .img{
 			height: 230px;		

@@ -8465,9 +8465,14 @@ p {
 .project-article-carousel figure {
   height: 600px; }
 
+.project-article-carousel .flickity-page-dots .dot {
+  background-color: rgba(0, 49, 141, 0.4); }
+  .project-article-carousel .flickity-page-dots .dot.is-selected {
+    background-color: #00318d; }
+
 .project-article-carousel .img {
-  -webkit-background-size: cover;
-  background-size: cover;
+  -webkit-background-size: contain;
+  background-size: contain;
   background-position: center;
   height: 600px; }
 
